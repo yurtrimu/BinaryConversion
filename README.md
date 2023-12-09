@@ -1,5 +1,5 @@
 # BinaryConversion Library
-A open, two-file library mainly used to convert and revert Strings Integers to Binary
+An open, two-file library mainly used to convert and revert Strings Integers to Binary
 
 The current functions are
 ```
