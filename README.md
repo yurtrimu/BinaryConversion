@@ -10,7 +10,7 @@ void IntToBinary(int n, int *dest, size_t dest_size);
 void StringToInt(char *str, size_t strlen, int *dest, size_t dest_size);
 char *StringFromInt(int *arr, size_t array_size);
 void StringToBinary(char *str, size_t strlen, int **dest, size_t char_size);
-void StringFromBinary(int **binary, size_t binary_size, char *dest, size_t char_size);
+char *StringFromBinary(int **binary, size_t binary_size, size_t char_size);
 void PrintBinaryString(int **arr, size_t strlen, size_t char_size);
 void PrintArray(int *arr, size_t array_size);
 ```
