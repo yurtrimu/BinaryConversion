@@ -15,7 +15,7 @@ void PrintBinaryString(int **arr, size_t strlen, size_t char_size);
 void PrintArray(int *arr, size_t array_size);
 ```
 
-## Documentation
+## Examples && Documentation
 
 
 ### ReverseArray
