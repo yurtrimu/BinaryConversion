@@ -29,10 +29,10 @@ void main() {
     int Array[ARRAY_SIZE] = { 3, 1, 0, 0, 0, 0, 6, 9 };
     PrintArray(Array, ARRAY_SIZE); // Output: "[3,1,0,0,0,0,6,9]"
 }
-```
+```c
 
 ### PrintBinaryString
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 12
@@ -48,10 +48,10 @@ void main() {
     StringToBinary(&Text, ARRAY_SIZE, binary, CHAR_BIT_SIZE); // Converts string to Binary
     PrintBinaryString(binary, ARRAY_SIZE, CHAR_BIT_SIZE); // Output: "[01001000,01100101,01101100,01101100,01101111,00100000,01010111,01101111,01110010,01101100,01100100,00100001]"
 }
-```
+```c
 
 ### ReverseArray
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 8
@@ -66,10 +66,10 @@ void main() {
 
     PrintArray(Array, ARRAY_SIZE);// Output: "[1, 0, 0, 0, 0, 0, 0, 0]"
 }
-```
+```c
 
 ### TrimBinary
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 8
@@ -85,10 +85,10 @@ void main() {
 
     PrintArray(TrimmedArray, return_size);// Output: "[1, 0]"
 }
-```
+```c
 
 ### IntFromBinary
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 8
@@ -103,10 +103,10 @@ void main() {
 
     printf("%d\n", ConvertedBinary); // Output: "2"
 }
-```
+```c
 
 ### IntToBinary
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 8
@@ -120,10 +120,10 @@ void main() {
 
     PrintArray(ConvertedDecimal, ARRAY_SIZE); // Output: "[0, 0, 0, 0, 0, 0, 1, 0]"
 }
-```
+```c
 
 ### IntToString
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 12
@@ -135,10 +135,10 @@ void main() {
 
     printf("%s\n", ConvertedASCII); // Output: "Hello World!"
 }
-```
+```c
 
 ### StringToInt
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 13
@@ -152,10 +152,10 @@ void main() {
 
     PrintArray(ASCIIArray, ARRAY_SIZE); // Output: "[72,101,108,108,111,32,87,111,114,108,100,33]"
 }
-```
+```c
 
 ### StringToBinary
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 12
@@ -171,10 +171,10 @@ void main() {
     StringToBinary(&Text, ARRAY_SIZE, binary, CHAR_BIT_SIZE); // Convert string to Binary
     PrintBinaryString(binary, ARRAY_SIZE, CHAR_BIT_SIZE); // Output: "[01001000,01100101,01101100,01101100,01101111,00100000,01010111,01101111,01110010,01101100,01100100,00100001]"
 }
-```
+```c
 
 ### StringFromBinary
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 12
@@ -193,4 +193,4 @@ void main() {
     char *ConvertedText = StringFromBinary(binary, ARRAY_SIZE, CHAR_BIT_SIZE); // Convert Binary to String
     printf("%s\n", ConvertedText); // Output: "Hello World!"
 }
-```
+```c
