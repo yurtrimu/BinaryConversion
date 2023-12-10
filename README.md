@@ -19,7 +19,7 @@ void PrintArray(int *arr, size_t array_size);
 
 
 ### PrintArray
-```
+```c
 #include "BinaryConversion.h"
 
 #define ARRAY_SIZE 8
