@@ -2,7 +2,7 @@
 An open, two-file library mainly used to convert and revert strings and integers to binary 
 
 The current functions are
-```
+```c
 void PrintArray(int *arr, size_t array_size);
 void PrintBinaryString(int **arr, size_t strlen, size_t char_size);
 void ReverseArray(int *arr, int *dest, size_t dest_size);
