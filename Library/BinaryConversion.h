@@ -7,6 +7,10 @@
 
 #pragma once
 
+#ifdef __cplusplus 
+extern "C" {
+#endif 
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,3 +24,7 @@ char *IntToString(int *arr, size_t array_size);
 void StringToInt(char *str, size_t strlen, int *dest, size_t dest_size);
 void StringToBinary(char *str, size_t strlen, int **dest, size_t char_size);
 char *StringFromBinary(int **binary, size_t binary_size, size_t char_size);
+
+#ifdef __cplusplus 
+}
+#endif 
