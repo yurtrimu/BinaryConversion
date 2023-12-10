@@ -1,3 +1,7 @@
+//
+// This code receives user input and output's the converted input string back to the user within a loop
+//
+
 #include "BinaryConversion.h"
 
 #define MAX_SIZE 128
