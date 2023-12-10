@@ -18,6 +18,38 @@ void PrintArray(int *arr, size_t array_size);
 ## Examples && Documentation
 
 
+### PrintArray
+```
+#include "BinaryConversion.h"
+
+#define ARRAY_SIZE 8
+
+void main() {
+    
+    int Array[ARRAY_SIZE] = { 3, 1, 0, 0, 0, 0, 6, 9 };
+    PrintArray(Array, ARRAY_SIZE); // Output: "[3,1,0,0,0,0,6,9]"
+}
+```
+
+### PrintBinaryString
+```
+#include "BinaryConversion.h"
+
+#define ARRAY_SIZE 12
+#define CHAR_BIT_SIZE 8
+
+void main() {
+    
+    char Text[ARRAY_SIZE] = "Hello World!";
+
+    int **binary = NULL;
+    binary = (int **)calloc(ARRAY_SIZE, sizeof(int));  // Allocate memory to the 'binary' variable's first pointer
+
+    StringToBinary(&Text, ARRAY_SIZE, binary, CHAR_BIT_SIZE); // Converts string to Binary
+    PrintBinaryString(binary, ARRAY_SIZE, CHAR_BIT_SIZE); // Output: "[01001000,01100101,01101100,01101100,01101111,00100000,01010111,01101111,01110010,01101100,01100100,00100001]"
+}
+```
+
 ### ReverseArray
 ```
 #include "BinaryConversion.h"
@@ -73,23 +105,6 @@ void main() {
 }
 ```
 
-### IntToBinary
-```
-#include "BinaryConversion.h"
-
-#define ARRAY_SIZE 8
-
-void main() {
-
-    int Decimal = 2;
-
-    int *ConvertedDecimal = (int *)calloc(ARRAY_SIZE, sizeof(int)); // Allocate memory to the pointer
-    IntToBinary(Decimal, ConvertedDecimal, ARRAY_SIZE); // '2' as decimal is '00000001' as binary
-
-    PrintArray(ConvertedDecimal, ARRAY_SIZE); // Output: "[0, 0, 0, 0, 0, 0, 1, 0]"
-}
-```
-
 ### StringToInt
 ```
 #include "BinaryConversion.h"
@@ -107,7 +122,24 @@ void main() {
 }
 ```
 
-### StringFromInt
+### IntToBinary
+```
+#include "BinaryConversion.h"
+
+#define ARRAY_SIZE 8
+
+void main() {
+
+    int Decimal = 2;
+
+    int *ConvertedDecimal = (int *)calloc(ARRAY_SIZE, sizeof(int)); // Allocate memory to the pointer
+    IntToBinary(Decimal, ConvertedDecimal, ARRAY_SIZE); // '2' as decimal is '00000001' as binary
+
+    PrintArray(ConvertedDecimal, ARRAY_SIZE); // Output: "[0, 0, 0, 0, 0, 0, 1, 0]"
+}
+```
+
+### IntToString
 ```
 #include "BinaryConversion.h"
 
@@ -160,37 +192,5 @@ void main() {
 
     char *ConvertedText = StringFromBinary(binary, ARRAY_SIZE, CHAR_BIT_SIZE); // Convert Binary to String
     printf("%s\n", ConvertedText); // Output: "Hello World!"
-}
-```
-
-### PrintBinaryString
-```
-#include "BinaryConversion.h"
-
-#define ARRAY_SIZE 12
-#define CHAR_BIT_SIZE 8
-
-void main() {
-    
-    char Text[ARRAY_SIZE] = "Hello World!";
-
-    int **binary = NULL;
-    binary = (int **)calloc(ARRAY_SIZE, sizeof(int));  // Allocate memory to the 'binary' variable's first pointer
-
-    StringToBinary(&Text, ARRAY_SIZE, binary, CHAR_BIT_SIZE); // Converts string to Binary
-    PrintBinaryString(binary, ARRAY_SIZE, CHAR_BIT_SIZE); // Output: "[01001000,01100101,01101100,01101100,01101111,00100000,01010111,01101111,01110010,01101100,01100100,00100001]"
-}
-```
-
-### PrintArray
-```
-#include "BinaryConversion.h"
-
-#define ARRAY_SIZE 8
-
-void main() {
-    
-    int Array[ARRAY_SIZE] = { 3, 1, 0, 0, 0, 0, 6, 9 };
-    PrintArray(Array, ARRAY_SIZE); // Output: "[3,1,0,0,0,0,6,9]"
 }
 ```
