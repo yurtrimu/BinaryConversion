@@ -105,23 +105,6 @@ void main() {
 }
 ```
 
-### StringToInt
-```
-#include "BinaryConversion.h"
-
-#define ARRAY_SIZE 13
-
-void main() {
-
-    char Text[13] = "Hello World!";
-
-    int *ASCIIArray = (int *)calloc(ARRAY_SIZE, sizeof(int)); // Allocate memory to the pointer
-    StringToInt(&Text, ARRAY_SIZE, ASCIIArray, ARRAY_SIZE); // Converts string to ASCII Array
-
-    PrintArray(ASCIIArray, ARRAY_SIZE); // Output: "[72,101,108,108,111,32,87,111,114,108,100,33]"
-}
-```
-
 ### IntToBinary
 ```
 #include "BinaryConversion.h"
@@ -151,6 +134,23 @@ void main() {
     char *ConvertedASCII = StringFromInt(ASCIIArray, ARRAY_SIZE); // Converts the ASCII Array to string
 
     printf("%s\n", ConvertedASCII); // Output: "Hello World!"
+}
+```
+
+### StringToInt
+```
+#include "BinaryConversion.h"
+
+#define ARRAY_SIZE 13
+
+void main() {
+
+    char Text[13] = "Hello World!";
+
+    int *ASCIIArray = (int *)calloc(ARRAY_SIZE, sizeof(int)); // Allocate memory to the pointer
+    StringToInt(&Text, ARRAY_SIZE, ASCIIArray, ARRAY_SIZE); // Converts string to ASCII Array
+
+    PrintArray(ASCIIArray, ARRAY_SIZE); // Output: "[72,101,108,108,111,32,87,111,114,108,100,33]"
 }
 ```
 
